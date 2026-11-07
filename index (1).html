@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Minha Loja</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="logo">Minha<span>Loja</span></div><button class="cartbtn" id="cb" onclick="openCart()">🛒 Carrinho<span id="cnt">0</span></button></header>
+<div class="hero"><h1>Achados que você vai amar ✨</h1><p>Toque em um produto, escolha as opções e pague por Pix.</p></div>
+<div class="grid" id="grid"></div>
+<div class="ov" id="ov" onclick="if(event.target===this)closeOv()"><div class="sheet" id="sh"></div></div>
+<div id="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>
